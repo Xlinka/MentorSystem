@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mentor Ticketing System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="d-flex align-items-center">
+            <img src="Assets/MentorBadge.png" alt="Mentor Badge" width="40" height="40" class="mr-2">
+            <a class="navbar-brand" href="#">Mentor Ticketing System</a>
+        </div>
+        <div>
+            <a class="nav-link text-light" href="#">Home</a>
+            <a class="nav-link text-light" href="#">About</a>
+            <a class="nav-link text-light" href="Login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <h1>Submit a Ticket</h1>
+                <form id="ticket-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select class="form-control" id="category" name="category">
+                            <option value="technical">Technical</option>
+                            <option value="gameplay">Logix</option>
+                            <option value="gameplay">Avatar</option>
+                            <option value="gameplay">Gameplay</option>
+                            <option value="gameplay">Cheese</option>
+                            <!-- Add more options as needed.. I Dont know how many catagories mentors will need -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" id="description" name="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit" onclick="submitTicket()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
